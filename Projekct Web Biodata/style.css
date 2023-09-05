@@ -24,6 +24,7 @@ nav{
     font-size: 35px;
     letter-spacing: 1px;
     cursor: pointer;
+    pointer-events: none;
 }
 span{
     color: rgb(9, 54, 9);
@@ -62,11 +63,13 @@ nav ul li a:hover{
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
+    pointer-events: none;
 }
 h1{
     color: #6F8966;
     margin: 20px 0px 20px;
     font-size: 75px;
+    animation: fade 1s ease-in 1s;
 }
 h3{
     color: rgb(9, 54, 9);
@@ -230,4 +233,15 @@ h4{
     color: white;
     bottom: 10px;
     font-size: 14px;
+}
+html{
+    scroll-behavior: smooth;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
