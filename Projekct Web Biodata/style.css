@@ -160,6 +160,7 @@ h4{
     display: flexbox;
     margin-bottom: 60px;
     margin-top: 20px;
+    justify-content: space-evenly;
 }
 .link-list a{
     display: flexbox;
@@ -171,7 +172,6 @@ h4{
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-    transition: transform .4s;
     margin-left: 15px;
     margin-right: 15px;
 }
