@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
 
     <!---Judul, icon dan link CSS-->
@@ -27,35 +28,43 @@
 
   <body>
     <!--Menu-->
-    <div id="menu" class="menu">
-      <nav>
-        <h2 class="logo">Baitul <span>Fatih</span></h2>
-        <ul>
-          <li><a href="#biodata">Biodata</a></li>
-          <li><a href="#sma">Info P SMA</a></li>
-          <li><a href="#video">Video Youtube Favorit</a></li>
-          <li><a href="#link">Website Favorit</a></li>
-        </ul>
-        <a href="https://wa.me/6281235045145" class="btn" target="_blank">Gas Kontak</a>
-      </nav>
 
+    <nav>
+      <h2 class="logo">Baitul <span>Fatih</span></h2>
+      <ul>
+        <li><a href="#biodata">Biodata</a></li>
+        <li><a href="#sma">Info P SMA</a></li>
+        <li><a href="#video">Video Youtube Favorit</a></li>
+        <li><a href="#link">Website Favorit</a></li>
+      </ul>
+      <a href="https://wa.me/6281235045145" class="btn" target="_blank"
+        >Gas Kontak</a
+      >
+    </nav>
+
+    <div id="menu" class="menu">
       <!--Biodata-->
       <!--nrp, nama, alamat rumah surabaya, nohp, harapan dg kuliah pbw-->
       <div class="biodata">
-        <h4>Assalamualaikum warahmatullahiwabarakatu! Kenalin aku</h4>
-        <br />
-        <h1>Ahmad <span>Fatih</span> Ramadhani</h1>
-        <br />
-        <h3>NRP: 5025221191</h3>
-        <h3>Alamat: Jl. Semampir Tengah VIIA/15A</h3>
-        <h3>No Hp: 081235045145</h3>
-        <br />
-        <h4 class="harapan">
-          harapan saya dengan mempelajari pemrogaman web saya dapat
-          <br />mengembangkan web untuk mendorong usaha saya juga menjadikan
-          <br />diri saya menjadi pribadi yang lebih bermanfaat bagi banyak
-          orang
-        </h4>
+        <div class="biodata-text">
+          <h4>Assalamualaikum warahmatullahiwabarakatu! Kenalin aku</h4>
+          <br />
+          <h1>Ahmad <span>Fatih</span> Ramadhani</h1>
+          <br />
+          <h3>NRP: 5025221191</h3>
+          <h3>Alamat: Jl. Semampir Tengah VIIA/15A</h3>
+          <h3>No Hp: 081235045145</h3>
+          <br />
+          <h4 class="harapan">
+            harapan saya dengan mempelajari pemrogaman web saya dapat
+            <br />mengembangkan web untuk mendorong usaha saya juga menjadikan
+            <br />diri saya menjadi pribadi yang lebih bermanfaat bagi banyak
+            orang
+          </h4>
+        </div>
+        <div class="biodata-img">
+          <img src="img/me.png" />
+        </div>
       </div>
     </div>
 
@@ -88,67 +97,63 @@
     </section>
 
     <!--3 video youtube favorit-->
-    <div id="video" class="video">
-      <div class="judul-video">
-        <h2>Video <span>Youtube</span> Favorit Saya</h2>
-      </div>
-      <div class="kotak">
-        <div class="kartu">
-          <i class="fa-brands fa-youtube"></i>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/vaIH5tLmC8U?si=dAXXW3mx3ItPFAfL"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>
-              Video ini berisi cerita dari sebuah monyet palsu yang dikirim ke
-              sekumpulan monyey asli dalam sebuah dokumenter.
-            </p>
-          </div>
+    <section>
+      <div id="video" class="video">
+        <div class="judul-video">
+          <h2>Video <span>Youtube</span> Favorit Saya</h2>
         </div>
-
-        <div class="kartu">
-          <i class="fa-brands fa-youtube"></i>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/yU-Cinkb7vw?si=v5ArQLMQ2WlAWnDY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>
-              Video ini adalah video yang mengajari saya dalam bagaimana
-              bersikap pada orang tua terutama ibu yang akhirnya membawa saya ke
-              kesadara dalam bagaimana seharusnya kita beradap.
-            </p>
+        <div class="kotak">
+          <div class="kartu">
+            <i class="fa-brands fa-youtube"></i>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/vaIH5tLmC8U?si=dAXXW3mx3ItPFAfL"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p>
+                Video ini berisi cerita dari sebuah monyet palsu yang dikirim ke
+                sekumpulan monyey asli dalam sebuah dokumenter.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="kartu">
-          <i class="fa-brands fa-youtube"></i>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/tGdL-34L-GE?si=Is1uJud1vRp9Btsc"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <p>kucing gemoy bgt rek rill gk boong</p>
+          <div class="kartu">
+            <i class="fa-brands fa-youtube"></i>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/yU-Cinkb7vw?si=v5ArQLMQ2WlAWnDY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p>
+                Video ini adalah video yang mengajari saya dalam bagaimana
+                bersikap pada orang tua terutama ibu yang akhirnya membawa saya
+                ke kesadara dalam bagaimana seharusnya kita beradap.
+              </p>
+            </div>
+          </div>
+
+          <div class="kartu">
+            <i class="fa-brands fa-youtube"></i>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/tGdL-34L-GE?si=Is1uJud1vRp9Btsc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p>kucing gemoy bgt rek rill gk boong</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!--10 link website favorit-->
     <footer id="link" class="link-main">

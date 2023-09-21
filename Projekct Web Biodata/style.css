@@ -1,247 +1,281 @@
 * {
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
 }
-.menu{
-    height: 100vh;
-    width: 100%;
-    background-image: url("img/background.jpg");
-    background-size: cover;
-    background-position: center;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  border: 0%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+.menu {
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.logo{
-    color : #6F8966;
-    font-size: 35px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    pointer-events: none;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 20px;
+  background-image: url("img/background.jpg");
 }
-span{
-    color: rgb(9, 54, 9);
+.logo {
+  color: #6f8966;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  pointer-events: none;
 }
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 25px;
+span {
+  color: rgb(9, 54, 9);
 }
-nav ul li a{
-    color : black;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: large;
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
 }
-nav ul li a:hover{
-    color : #A6BDA4;
-    transition: .4s;
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: large;
 }
-.btn{
-    background-color: rgb(9, 54, 9);
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: transform .4s;
+nav ul li a:hover {
+  color: #a6bda4;
+  transition: 0.4s;
 }
-.btn:hover{
-    transform: scale(1.2);
+.btn {
+  background-color: rgb(9, 54, 9);
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
 }
-.biodata{
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    pointer-events: none;
+.btn:hover {
+  transform: scale(1.2);
 }
-h1{
-    color: #6F8966;
-    margin: 20px 0px 20px;
-    font-size: 75px;
-    animation: fade 1s ease-in 1s;
+.biodata {
+  display: flex;
+  flex-direction: row;
+  pointer-events: none;
+  flex-wrap: wrap;
+  padding: 50px;
+  flex: 1;
 }
-h3{
-    color: rgb(9, 54, 9);
-    font-size: 25px;
-    margin-bottom: 10px;
-    font-weight: 600;
+.biodata-img img {
+  height: auto;
+  width: clamp(260px, 400px, 700px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  pointer-events: none;
+  padding: 40px;
+  padding-left: 50px;
 }
-h4{
-    color: rgb(9, 54, 9);
-    letter-spacing: 2px;
-    font-size: 20px;
+.biodata-text {
+  width: clamp(260px, 400px, 700px);
+  height: auto;
+  flex: 1;
 }
-.harapan{
-    background-color: #6F8966;
-    color: white;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: 400;
-    padding: 25px 20px;
-    border-radius: 10px;
+h1 {
+  color: #6f8966;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+  animation: fade 1s ease-in 1s;
 }
-.sma{
-    width: 100%;
-    padding: 100px 0px;
-    background-image: url("img/background2.jpg");
-    background-size: cover;
-    background-position: center;
+h3 {
+  color: rgb(9, 54, 9);
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
-.sma iframe{
-    height: 450px;
-    width: 400px;
-    background-color: #FFFCF2;
-    border: 2px solid transparent;
-    padding: 15px 15px;
-    border-radius: 50px;
-
+h4 {
+  color: rgb(9, 54, 9);
+  letter-spacing: 2px;
+  font-size: 20px;
 }
-.sma-text{
-    width: 550px;
+.harapan {
+  background-color: #6f8966;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: 400;
+  padding: 25px 20px;
+  border-radius: 10px;
 }
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.sma {
+  width: 100%;
+  min-height: 50vh;
+  padding: 100px 0px;
+  background-image: url("img/background2.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.sma-text h2{
-    color: white;
-    font-size: 75px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
+.sma iframe {
+  height: 450px;
+  width: 400px;
+  background-color: #fffcf2;
+  border: 2px solid transparent;
+  padding: 15px 15px;
+  border-radius: 50px;
 }
-.sma-text h5{
-    color: white;
-    letter-spacing: 2px;
-    font-size: 22px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
+.sma-text {
+  text-align: center;
+  align-items: center;
+  padding-top: 50px;
+  width: 550px;
 }
-.sma-text p{
-    color: black;
-    letter-spacing: 1px;
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 45px;
-    font-weight: 600;
+.main {
+  min-width: 1130px;
+  min-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
-.link-main{
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-image: url(img/background4d.jpg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.sma-text h2 {
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
 }
-.judul-web{
-    color : white;
-    font-size: 30px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    cursor: pointer;
+.sma-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
 }
-.link-list{
-    display: flexbox;
-    margin-bottom: 60px;
-    margin-top: 20px;
-    justify-content: space-evenly;
+.sma-text p {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 45px;
+  font-weight: 600;
 }
-.link-list a{
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    color : black;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-left: 15px;
-    margin-right: 15px;
+.link-main {
+  position: relative;
+  min-width: 100%;
+  min-height: 200px;
+  background-image: url(img/background4d.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.link-list a:hover{
-    color : #A6BDA4;
-    transition: .4s;
+.judul-web {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
 }
-.video{
-    width: 100%;
-    padding: 50px 0px;
-    height: 100vh;
-    background-image: url("img/background3.jpg");
-    background-size: cover;
-    background-position: center;
+.link-list {
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.judul-video{
-    color : #6F8966;
-    font-size: 50px;
-    width: 1700px;
-    margin: 30px auto;
-    text-align: center;
+.link-list a {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  min-height: 50px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-.kotak{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
+.link-list a:hover {
+  color: #a6bda4;
+  transition: 0.4s;
 }
-.kartu{
-    height: 600px;
-    width: 500px;
-    padding: 20px 35px;
-    background-color: #A6BDA4;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
+.video {
+  min-width: 100%;
+  padding: 50px 0px;
+  min-height: 100vh;
+  background-image: url("img/background3.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.kartu i{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin: 10px 0px;
-    color: rgb(9, 54, 9);
+.judul-video {
+  color: #6f8966;
+  font-size: 50px;
+  min-width: 0px;
+  margin: 30px auto;
+  text-align: center;
 }
-.kartu iframe{
-    height: 400px;
-    width: 400px;
-    padding: 8px 15px;
+.kotak {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 300px;
 }
-.kartu p{
-    margin: 10px 0px;
-    font-size: 18px;
-    font-weight: 400;
+.kartu {
+  min-height: 200px;
+  width: auto;
+  padding: 20px 35px;
+  background-color: #a6bda4;
+  border-radius: 20px;
+  margin: 15px;
+  text-align: center;
+  flex: 1;
 }
-.end{
-    position: absolute;
-    color: white;
-    bottom: 10px;
-    font-size: 14px;
+.kartu i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 10px 0px;
+  color: rgb(9, 54, 9);
 }
-html{
-    scroll-behavior: smooth;
+.kartu iframe {
+  flex: 1;
+  min-height: 300px;
+  width: auto;
+  padding: 8px 15px;
 }
-@keyframes fade{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+.kartu p {
+  max-width: 500px;
+  margin: 10px 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.end {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
