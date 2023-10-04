@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+
+    <!---Judul, icon dan link CSS-->
+    <title>Baitul Fatih</title>
+    <link rel="icon" href="img/rumah.png" />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!--Accessibility (template)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .fakeimg {
+        height: 200px;
+        background: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Baitul Fatih</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navmenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#biodata" class="nav-link">Biodata</a>
+            </li>
+            <li class="nav-item">
+              <a href="#sma" class="nav-link">Info P SMA</a>
+            </li>
+            <li class="nav-item">
+              <a href="#video" class="nav-link">Video Youtube Favorit</a>
+            </li>
+            <li class="nav-item">
+              <a href="#link" class="nav-link">Website Favorit</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--Biodata-->
+    <section
+      class="section bg-light text-black p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <!--nrp, nama, alamat rumah surabaya, nohp, harapan dg kuliah pbw-->
+        <div
+          id="biodata"
+          class="d-md-flex flex-md-row align-items-center justify-content-between"
+        >
+          <div class="p-md-5 pt-sm-5">
+            <h4>Assalamualaikum warahmatullah hiwabarakatu! Kenalin aku</h4>
+            <br />
+            <h1>Ahmad <span class="text-success">Fatih</span> Ramadhani</h1>
+            <br />
+            <h4>NRP: 5025221191</h4>
+            <h4>Alamat: Jl. Semampir Tengah VIIA/15A</h4>
+            <h4>No Hp: 081235045145</h4>
+            <br />
+            <h5 class="bg-success text-white p-4 rounded">
+              Harapan saya dengan mempelajari pemrogaman web saya dapat
+              mengembangkan web untuk mendorong usaha saya juga menjadikan diri
+              saya menjadi pribadi yang lebih bermanfaat bagi banyak orang
+            </h5>
+          </div>
+          <div class="biodata-img">
+            <img class="img-fluid px-5 pt-sm-3" src="img/me.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--Info P SMA-->
+    <section id="sma" class="section bg-success text-light p-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-lg-row align-items-center justify-content-evenly text-center text-lg-end"
+        >
+          <div class="p-5 h-100 bg-success-subtle rounded">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63321.92198600881!2d112.759257!3d-7.283989999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbca5a923a1d%3A0xc94957f0916bede2!2sSMA%20Muhammadiyah%202%20Surabaya!5e0!3m2!1sen!2sid!4v1696346276851!5m2!1sen!2sid"
+              width="300"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="pt-sm-4">
+            <h2>SMA SAYA</h2>
+            <h5>SMAS <span class="text-warning">Muhammadiyah 2</span> Surabaya</h5>
+            <p>
+              SMA Muhammadiyah 2 Surabaya Berdiri pada 1 Januari 1975 oleh
+              Pimpinan Cabang Muhammadiyah Ngagel Surabaya. Berlokasi di Jl.
+              Pucang Anom No.91 SMA Muhammadiyah 2 atau yang biasa dipanggil
+              dengan sebutan SMAMDA menjadi sekolah saya selama 3 tahun menempuh
+              jenjang SMA. Sekarang SMAMDA telah mendirikan gedung baru yang
+              tinggi dan penuh fasilitas dimana pembagunannya berlangsung tepat
+              setelah saya lulus :).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3 video youtube favorit -->
+    <!-- Video 1 -->
+    <section class="p-5">
+      <div id="video" class="container">
+        <div class="text-center text-black mb-4">
+          <h2>Video <span class="text-success">Youtube</span> Favorit Saya</h2>
+        </div>
+        <div class="row">
+          <div class="col-md p-md-4 p-sm-3">
+            <div class="card bg-success text-white">
+              <div class="card-body text-center">
+                <div class="h1 mb-3"><i class="fa-brands fa-youtube"></i></div>
+                <div>
+                  <iframe
+                    src="https://www.youtube.com/embed/vaIH5tLmC8U?si=dAXXW3mx3ItPFAfL"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <p class="card-text">
+                    Video ini berisi cerita dari sebuah monyet palsu yang
+                    dikirim ke sekumpulan monyey asli dalam sebuah dokumenter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="col-md p-md-4 p-sm-3">
+            <div class="card bg-success text-white">
+              <div class="card-body text-center">
+                <div class="h1 mb-3"><i class="fa-brands fa-youtube"></i></div>
+                <div>
+                  <iframe
+                    src="https://www.youtube.com/embed/yU-Cinkb7vw?si=v5ArQLMQ2WlAWnDY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <p class="card-text">
+                    Video ini adalah video yang mengajari saya dalam bagaimana
+                    bersikap pada orang tua terutama ibu yang akhirnya membawa
+                    saya ke kesadara dalam bagaimana seharusnya kita beradap.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="col-md p-md-4 p-sm-3">
+            <div class="card bg-success text-white">
+              <div class="card-body text-center">
+                <div class="h1 mb-3"><i class="fa-brands fa-youtube"></i></div>
+                <div>
+                  <iframe
+                    src="https://www.youtube.com/embed/tGdL-34L-GE?si=Is1uJud1vRp9Btsc"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                  <p class="card-text">kucing gemoy bgt rek rill gk boong</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--10 link website favorit original-->
+    <section id="link" class="p-5 bg-success">
+      <div class="container">
+        <h2 class="text-center mb-4 text-light">Link <span class="text-warning">Website</span> Favorit Saya</h2>
+        <div class="accordion accordion-flush" id="linkfavorit">
+          
+          <!-- Link 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-one" aria-expanded="false" aria-controls="flush-collapseOne">
+                <a class="text-decoration-none text-success" href="https://www.google.com" target="_blank"
+            ><i class="fa-brands fa-google text-success"></i
+          > <span class="px-3 text-decoration-none">Google</span></a>
+         
+              </button>
+            </h2>
+            <div id="linkfavorit-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#linkfavorit">
+              <div class="accordion-body text-center">
+                <img class="img-fluid px-5 pt-sm-3" src="img/link/google.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Link 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingtwo">
+              <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-two" aria-expanded="false" aria-controls="flush-collapseOne">
+                <a class="text-decoration-none text-success" href="https://www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube text-success"></i
+          ><span class="px-3 text-decoration-none">Youtube</span></a>
+              </button>
+            </h2>
+            <div id="linkfavorit-two" class="accordion-collapse collapse" aria-labelledby="flush-headingtwo" data-bs-parent="#linkfavorit">
+              <div class="accordion-body text-center">
+                <img class="img-fluid px-5 pt-sm-3" src="img/link/youtube.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Link 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingthree">
+              <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-three" aria-expanded="false" aria-controls="flush-collapseOne">
+                <a class="text-decoration-none text-success" href="https://my.its.ac.id" target="_blank"> <span class="text-decoration-none">My ITS</span></a>
+              </button>
+            </h2>
+            <div id="linkfavorit-three" class="accordion-collapse collapse" aria-labelledby="flush-headingthree" data-bs-parent="#linkfavorit">
+              <div class="accordion-body text-center">
+                <img class="img-fluid px-5 pt-sm-3" src="img/link/myits.png" />
+              </div>
+            </div>
+          </div>
+
+           <!-- Link 4 -->
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+              <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-four" aria-expanded="false" aria-controls="flush-collapseOne">
+                <a class="text-decoration-none text-success" href="https://drive.google.com" target="_blank"
+                ><i class="fa-brands fa-google-drive text-success"></i
+              ><span class="px-3 text-decoration-none">Google Drive</span></a>
+              </button>
+            </h2>
+            <div id="linkfavorit-four" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#linkfavorit">
+              <div class="accordion-body text-center">
+                <img class="img-fluid px-5 pt-sm-3" src="img/link/googledrive.png" />
+              </div>
+            </div>
+          </div>
+
+                     <!-- Link 5 -->
+                     <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingfive">
+                        <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-five" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <a class="text-decoration-none text-success" href="https://colab.research.google.com" target="_blank">
+                            <span class="text-decoration-none">Google Colab</span>
+                          </a>
+                        </button>
+                      </h2>
+                      <div id="linkfavorit-five" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#linkfavorit">
+                        <div class="accordion-body text-center">
+                          <img class="img-fluid px-5 pt-sm-3" src="img/link/googlecollab.png" />
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Link 6 -->
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingsix">
+              <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-six" aria-expanded="false" aria-controls="flush-collapseOne">
+                <a class="text-decoration-none text-success" href="https://github.com" target="_blank"
+                ><i class="fa-brands fa-github text-success"></i
+              ><span class="px-3 text-decoration-none">Git Hub</span></a>
+              </button>
+            </h2>
+            <div id="linkfavorit-six" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#linkfavorit">
+              <div class="accordion-body text-center">
+                <img class="img-fluid px-5 pt-sm-3" src="img/link/github.png" />
+              </div>
+            </div>
+          </div>
+
+              <!-- Link 7 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingseven">
+                  <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-seven" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <a class="text-decoration-none text-success" href="https://www.canva.com" target="_blank">
+                      <span class="text-decoration-none">Canva</span>
+                    </a>
+                  </button>
+                </h2>
+                <div id="linkfavorit-seven" class="accordion-collapse collapse" aria-labelledby="flush-headingseven" data-bs-parent="#linkfavorit">
+                  <div class="accordion-body text-center">
+                    <img class="img-fluid px-5 pt-sm-3" src="img/link/canva.png" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Link 8 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingeight">
+                  <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-eight" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <a class="text-decoration-none text-success" href="https://itsacid-my.sharepoint.com" target="_blank"
+                    ><i class="fa-brands fa-microsoft"></i
+                  ><span class="px-3 text-decoration-none">Microsoft Sharepoint</span></a>
+                  </button>
+                </h2>
+                <div id="linkfavorit-eight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#linkfavorit">
+                  <div class="accordion-body text-center">
+                    <img class="img-fluid px-5 pt-sm-3" src="img/link/microsoftsharepoint.png" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Link 9 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingnnine">
+                  <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-nine" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <a class="text-decoration-none text-success" href="https://shopee.co.id" target="_blank">
+                      <span class="text-decoration-none">Shoppee</span>
+                    </a>
+                  </button>
+                </h2>
+                <div id="linkfavorit-nine" class="accordion-collapse collapse" aria-labelledby="flush-headingnnine" data-bs-parent="#linkfavorit">
+                  <div class="accordion-body text-center">
+                    <img class="img-fluid px-5 pt-sm-3" src="img/link/shoppee.png" />
+                  </div>
+                </div>
+              </div>
+
+                            <!-- Link 10 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingten">
+                                <button class="accordion-button collapsed bg-success-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#linkfavorit-ten" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  <a class="text-decoration-none text-success" href="https://www.tokopedia.com" target="_blank">
+                                    <span class="text-decoration-none">Tokopedia</span>
+                                  </a>
+                                </button>
+                              </h2>
+                              <div id="linkfavorit-ten" class="accordion-collapse collapse" aria-labelledby="flush-headingten" data-bs-parent="#linkfavorit">
+                                <div class="accordion-body text-center">
+                                  <img class="img-fluid px-5 pt-sm-3" src="img/link/tokopedia.png" />
+                                </div>
+                              </div>
+                            </div>
+        
+      </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer
+      class="p-5 bg-success-subtle text-success text-center position-relative"
+    >
+      <div class="container">
+        <p class="lead">CopyRight 2023 By Ahmad Fatih Ramadhani</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1 text-success"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
