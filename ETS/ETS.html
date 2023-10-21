@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+
+    <!---Judul, icon dan link CSS-->
+    <title>Kucing Gimoy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/Logo Kucing Gimoy/head.png" />
+    <!-- Option 1: Include in HTML -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <!--Accessibility (template)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .fakeimg {
+        height: 200px;
+        background: #aaa;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!--Menu-->
+    <nav class="navbar bg-warning-subtle text-warning-emphasis py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="#">
+          <img src="img/Logo Kucing Gimoy/logo.png" alt="Logo" style="width:60px;"> 
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navmenu" class="collapse navbar-collapse pt-5">
+          <div class="container">
+            <h2>Cari <span style="font-weight: bold;" class="text-warning">Artikel</span> Pilihanmu!</h2>
+            <p>Masukkan judul artikel yang ingin kamu cari disini:</p>  
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Judul Artikel</th>
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <a ><td>8 Alasan Memelihara Kucing Baik untuk Kesehatanmu</td></a>
+                </tr>
+                <tr>
+                  <td>7 Ras Kucing Termahal di Dunia, Ada yang Mencapai Rp 1,8 Miliar
+                  </td>
+                </tr>
+                <tr>
+                  <td>Fenrir, kucing tertinggi di dunia, mendukung penampungan hewan dan pasien HIV</td>
+                </tr>
+                <tr>
+                  <td>7 Ras Kucing Terbesar di Dunia, Ada yang Bobotnya hingga 15 Kg</td>
+                </tr>
+                <tr>
+                  <td>7 Fakta Unik Rusty-Spotted Cat, Ras Kucing Terkecil di Asia</td>
+                </tr>
+                <tr>
+                  <td>Agar Tumbuh Sehat, Ini Cara Merawat Kucing dengan Baik!</td>
+                </tr>
+                <tr>
+                  <td>Sudah tahu belum kalau 13 makanan ini bisa dimakan kucing?</td>
+                </tr>
+                <tr>
+                  <td>15 Makanan yang Tidak Boleh Dimakan Kucing, Bahaya!</td>
+                </tr>
+                <tr>
+                  <td>20+ Ciri-ciri Kucing Sakit dan Cara Mangatasinya</td>
+                </tr>
+                <tr>
+                  <td>European wildcat</td>
+                </tr>
+                <tr>
+                  <td>Rusty-spotted cat</td>
+                </tr>
+                <tr>
+                  <td>Sand Cat</td>
+                </tr>
+                <tr>
+                  <td>Bisakah Kucing Pasir Menjadi Hewan Peliharaan? Yang Perlu Diketahui Tentang Kucing Menggemaskan Ini</td>
+                </tr>
+                <tr>
+                  <td>Norwegian Forest Cat</td>
+                </tr>
+                <tr>
+                  <td>Pallas's cat</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <p>Artikel yang kamu cari tidak ada :( ? Hubungi kami! </p>
+          </div>
+          
+          <script>
+          $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+          </script>
+        </div>
+      </div>
+    </nav>
+
+    <!--Carousel-->
+    <section id="carousel">
+      <div class="container py-5 col-lg-8">
+        <div class="pb-sm-4 text-center text-warning-emphasis">
+          <h2 style="font-weight: bold;">Artikel <span class="text-warning">Kucing!</span></h2>
+        </div>
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mb-3">
+                    <img src="https://images.tokopedia.net/img/KRMmCm/2022/10/3/0a703908-0216-4b05-a79e-70f3911c0d3d.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                  <a target="_blank" class="text-warning-emphasis text-decoration-none text-black" href="https://www.tokopedia.com/blog/makanan-berbahaya-untuk-kucing-hbl/?utm_source=google&utm_medium=organic#:~:text=Selain%20karena%20mengandung%20kafein%2C%20cokelat,memberikan%20cokelat%20pada%20kucingmu%2C%20ya!">
+                      <h5 style="font-weight: 700;" class="card-title">15 Makanan yang Tidak Boleh Dimakan <span class="text-warning">Kucing</span>, Bahaya!</h5>
+                      <p style="font-weight: 400;" class="card-text">Banyak yang beranggapan jika kucing boleh diberi makan apa saja, terutama saat kucing menerima begitu saja makanan yang diberikan oleh manusia. Namun, faktanya kucing tidak boleh diberi makanan sembarangan agar kesehatannya tetap terjaga.</p>
+                  </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                  <a target="_blank" class="text-warning-emphasis text-decoration-none text-black" href="https://www.liputan6.com/citizen6/read/4503092/8-alasan-memelihara-kucing-baik-untuk-kesehatanmu?page=2">
+                    <img src="https://cdn1-production-images-kly.akamaized.net/y5E-nFn2wlk7MwRobhbBGUHlS28=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3315302/original/005575500_1607063948-pexels-kelvin-valerio-617278.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 style="font-weight: 700;" class="card-title">8 Alasan Memelihara <span class="text-warning">Kucing</span> Baik untuk Kesehatanmu</h5>
+                      <p class="card-text">Kucing selalu digambarkan sebagai hewan peliharaan yang cuek dengan pemiliknya, dan hanya benar-benar peduli pada dirinya sendiri.</p>    
+      </a>
+              </div>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                  <a target="_blank" class="text-warning-emphasis text-decoration-none text-black" href="https://www.idntimes.com/hype/fun-fact/dwi-kurniawati-lestari/7-fakta-unik-rusty-spotted-cat-ras-kucing-terkecil-di-asia-c1c2?page=all">
+                    <img src="https://cdn.idntimes.com/content-images/community/2019/02/q-3-55bb5e130813ba57cb5e70f53bfa7947.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 style="font-weight: 700;" class="card-title">7 Fakta Unik Rusty-Spotted Cat, Ras <span  class="text-warning">Kucing</span> Terkecil di Asia </h5>
+                      <p class="card-text">Hewan lucu yang satu ini sudah hidup bersama dengan manusia sejak 6000 tahun SM, dan mulai dimanfaatkan sebagai pengusir tikus pada tahun 3500 SM di Mesir Kuno.</p>
+                  </a>
+                  </div>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                  <a target="_blank" class="text-warning-emphasis text-decoration-none text-black" href="https://www.greenmatters.com/pets/can-sand-cats-be-pets">
+                    <img src="https://media.greenmatters.com/brand-img/IR0k6kDwV/1600x838/can-sand-cats-be-pets-1-1686074776394.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 style="font-weight: 700;" class="card-title">Bisakah <span  class="text-warning">Kucing</span> Pasir Menjadi Hewan Peliharaan? Yang Perlu Diketahui Tentang Kucing Menggemaskan Ini</h5>
+                      <p class="card-text">Kucing pasir, yang berasal dari gurun di sebagian Afrika dan Asia, adalah hewan cantik yang terbiasa hidup di alam liar.</p>
+                    </div>
+                  </a>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                 <a target="_blank" class="text-warning-emphasis text-decoration-none text-black" href="https://www.merdeka.com/gaya/sudah-tahu-belum-kalau-13-makanan-ini-bisa-dimakan-kucing-14525-mvk.html">
+                    <img src="img/7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 style="font-weight: bold;"class="card-title">Sudah tahu belum kalau 13 makanan ini bisa dimakan <span  class="text-warning">kucing</span>?</h5>
+                      <p class="card-text">Kucing merupakan salah satu hewan peliharaan yang memiliki selera makan yang khas.</p>
+                 </a>
+                  </div>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <div class="card mb-3">
+                  <a target="_blank" class="text-warning-emphasis text-decoration-none text-black" href="https://www.gramedia.com/literasi/ciri-kucing-sakit/">
+                    <img src="https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/09/07174220/ezgif.com-gif-maker-2021-07-07T132731.026-1280x720-1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 style="font-weight: 700;" class="card-title">20+ Ciri-ciri <span  class="text-warning">Kucing</span> Sakit dan Cara Mangatasinya</h5>
+                      <p class="card-text">Ciri-ciri kucing sakit dapat kita kenali dari berbagai macam faktor, mulai dari perubahan penampilan, perilaku, aktivitas sampai kemampuannya dalam bersosialisasi.</p>
+                  </a>
+                  </div>
+                </div> 
+              </div>
+              
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+    
+      </div>      
+      </section>
+
+      <!-- pembatas liar -->
+      <div class="p-3 bg-warning-subtle text-warning-emphasis rounded text-center">
+        <h1 style="font-weight: 700;" ><span  class="text-warning">Kucing</span> di Alam Liar</h1>
+        <p style="font-weight: 600;" >Walaupun kucing adalah hewan yang kecil dan gemoy mereka tetap hewan liar tersukses di alam</p>
+      </div>
+
+        <!-- Kucing Hutan -->
+        <section id="hutan" class="section bg-white text-success p-4">
+          <div class="container">
+            <div
+              class="">
+              <div class="pb-sm-2 text-center">
+                <h2 style="font-weight: 700;" ><span class="text-warning">Kucing</span> Hutan</h2>
+              </div>
+                <div class="row">
+                  <div class="col-lg-12 p-3">
+                    <div class="card bg-dark text-white">
+                      <iframe height="420" src="https://www.youtube.com/embed/W86cTIoMv2U?si=-jkMbMTH3htSEAWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  
+                    <div class="col-lg-5">
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Felis_silvestris_silvestris_Luc_Viatour.jpg/1024px-Felis_silvestris_silvestris_Luc_Viatour.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                           <a target="_blank" id="animated" class="text-decoration-none text-black" href="https://en.wikipedia.org/wiki/European_wildcat">
+                              <h5 style="font-weight: 700;" class="card-title text-success">European wildcat</h5>
+                              <p class="card-text text-warning-emphasis">Kucing liar Eropa (Felis silvestris) adalah spesies kucing liar kecil yang berasal dari benua Eropa, Skotlandia, Turki, dan Kaukasus. Ia mendiami hutan dari Semenanjung Iberia, Italia, Eropa Tengah dan Timur hingga Kaukasus. Bulunya berwarna kecoklatan sampai abu-abu dengan garis-garis di dahi dan samping serta memiliki ekor lebat dengan ujung berwarna hitam.</p>
+                           </a>
+                           <a target="_blank" class="my-3 btn btn-success" href="https://en.wikipedia.org/wiki/European_wildcat" role="button">Baca Lebih!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-7">
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rusty_spotted_cat_1.jpg/1920px-Rusty_spotted_cat_1.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <a id="animated" target="_blank" class="text-decoration-none text-black" href="https://en.wikipedia.org/wiki/Rusty-spotted_cat">
+                              <h5 style="font-weight: 700;" class="card-title text-success">Rusty-spotted cat</h5>
+                              <p class="card-text text-warning-emphasis">Kucing bintik karat (Prionailurus rubiginosus) adalah salah satu anggota terkecil keluarga kucing, yang catatan sejarahnya hanya diketahui dari India dan Sri Lanka.</p>
+                            </a>
+                            <a target="_blank" class="my-3 btn btn-success" href="https://en.wikipedia.org/wiki/Rusty-spotted_cat" role="button">Baca Lebih!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                <!-- Kucing Gurun -->
+        <section id="gurun" class="section bg-white p-4">
+          <div class="container">
+            <div
+              class="">
+              <div class="pb-sm-2 text-center">
+                <h2 style="font-weight: 700;" class="text-warning">Kucing Gurun</h2>
+              </div>
+                <div class="row">
+                  <div class="col-lg-12 p-3">
+                    <div class="card bg-dark text-white">
+                      <iframe height="420" src="https://www.youtube.com/embed/tGdL-34L-GE?si=urngOQDnXcWlEEB1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  
+                    <div class="col-lg-5">
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="https://cdn0-production-images-kly.akamaized.net/qW8rjdkaAug2__J-Y8-yVh2q1XM=/0x0/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1736865/original/051362600_1507765750-first-wild-sand-cat-kitten-footage-gregory-breton-africa-2-59dc6c8208a09__880.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                           <a id="animated" target="_blank" class="text-decoration-none text-warning-emphasis" href="https://en.wikipedia.org/wiki/Sand_cat">
+                              <h5 style="font-weight: 700;" class="card-title text-warning">Sand Cat</h5>
+                              <p class="card-text">Kucing liar Eropa (Felis silvestris) adalah spesies kucing liar kecil yang berasal dari benua Eropa, Skotlandia, Turki, dan Kaukasus. Ia mendiami hutan dari Semenanjung Iberia, Italia, Eropa Tengah dan Timur hingga Kaukasus. Bulunya berwarna kecoklatan sampai abu-abu dengan garis-garis di dahi dan samping serta memiliki ekor lebat dengan ujung berwarna hitam.</p>
+                           </a>
+                           <a class="my-3 btn btn-warning" href="https://en.wikipedia.org/wiki/Sand_cat" role="button">Baca Lebih!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-7">
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="https://media.greenmatters.com/brand-img/IR0k6kDwV/1600x838/can-sand-cats-be-pets-1-1686074776394.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <a id="animated" target="_blank" class="text-decoration-none text-warning-emphasis" href="https://www.greenmatters.com/pets/can-sand-cats-be-pets">
+                              <h5 style="font-weight: 700;"  class="card-title text-warning">Bisakah Kucing Pasir Menjadi Hewan Peliharaan? Yang Perlu Diketahui Tentang Kucing Menggemaskan Ini</h5>
+                              <p class="card-text">Kucing pasir, yang berasal dari gurun di sebagian Afrika dan Asia, adalah hewan cantik yang terbiasa hidup di alam liar. Ukurannya yang mirip dengan kucing rumahan mungkin membuat para pecinta kucing ingin membawanya pulang sebagai hewan peliharaan. Tapi bisakah kucing pasir menjadi hewan peliharaan? Berikut penjelasan lebih lanjut tentang makhluk-makhluk ini dan semua detail tentang apakah Anda dapat menjinakkannya.</p>
+                            </a>
+                            <a target="_blank" class="my-3 btn btn-warning" href="https://www.greenmatters.com/pets/can-sand-cats-be-pets" role="button">Baca Lebih!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kucing Gunung Bersalju -->
+        <section id="salju" class="section bg-white text-info p-4">
+          <div class="container">
+            <div
+              class="">
+              <div class="pb-sm-2 text-center">
+                <h2 style="font-weight: 700;"><span class="text-warning">Kucing</span> Gunung Bersalju</h2>
+              </div>
+                <div class="row">
+                  <div class="col-lg-12 p-3">
+                    <div class="card bg-dark text-white">
+                      <iframe height="420" src="https://www.youtube.com/embed/kgrV3_g9rYY?si=9vHPo_2ge55rNd9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  
+                    <div class="col-lg-5">
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Dalaja-Doll-norv%C3%A9gien-ambre-blotched-tabby_avec-blanc.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                           <a id="animated" target="_blank" class="text-decoration-none text-warning-emphasis" href="https://en.wikipedia.org/wiki/Norwegian_Forest_cat">
+                              <h5 style="font-weight: 700;" class="card-title text-info">Norwegian Forest Cat</h5>
+                              <p class="card-text">Kucing Hutan Norwegia (bahasa Norwegia: Norsk skogskatt dan Norsk skaukatt) adalah jenis kucing domestik yang berasal dari Eropa Utara. Trah alami ini beradaptasi dengan iklim yang sangat dingin, dengan lapisan atas berupa rambut panjang berkilau dan lapisan bawah berbulu untuk insulasi.</p>
+                           </a>
+                           <a target="_blank" class="my-3 btn btn-info text-light" href="https://en.wikipedia.org/wiki/Norwegian_Forest_cat" role="button">Baca Lebih!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-7">
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Manoel.jpg/1280px-Manoel.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <a id="animated" target="_blank" class="text-decoration-none text-warning-emphasis" href="https://en.wikipedia.org/wiki/Pallas%27s_cat">
+                              <h5 style="font-weight: 700;" class="card-title text-info">Pallas's cat</h5>
+                              <p class="card-text">Kucing Pallas (Otocolobus manul), juga dikenal sebagai manul, adalah kucing liar kecil dengan bulu panjang dan lebat berwarna abu-abu muda, dan telinga bulat terletak rendah di sisi kepala.</p>
+                            </a>
+                            <a target="_blank" class="my-3 btn btn-info text-light" href="https://en.wikipedia.org/wiki/Pallas%27s_cat" role="button">Baca Lebih!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- pembatas jinak -->
+        <div class="p-3 bg-warning-subtle text-warning-emphasis rounded text-center">
+          <h1 style="font-weight: 700;"><span class="text-warning">Kucing</span> di Rumah</h1>
+          <p style="font-weight: 600;" >Setelah menerima manusia sebagai temannya, kucing menjadi aslah satu hewan ter-gemoy untuk dipelihara</p>
+        </div>
+
+    <!--Info Kucing-->
+    <section id="fakta" class="section text-warning p-4">
+      <div class="container">
+        <div
+          class="">
+          <div class="pb-sm-2 text-center text-white">
+            <h2 style="font-weight: 700;">Fakta Kucing</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 py-3 align-items-center">
+              <div class="card">
+                <img src="https://cdn1-production-images-kly.akamaized.net/y5E-nFn2wlk7MwRobhbBGUHlS28=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3315302/original/005575500_1607063948-pexels-kelvin-valerio-617278.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title"> 8 Alasan Memelihara Kucing Baik untuk Kesehatanmu</h5>
+                  <p class="card-text">Kucing sesungguhnya amat peka terhadap keadaan sekitar. Ini terutama benar jika menyangkut pemiliknya dan keadaan emosi pemiliknya.</p>
+                  <a target="_blank" href="https://www.liputan6.com/citizen6/read/4503092/8-alasan-memelihara-kucing-baik-untuk-kesehatanmu?page=2" class="btn btn-outline-warning">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 py-3">
+              <div class="card">
+                <img src="https://asset.kompas.com/crops/PzWFTRnMylHus_Se2HHJPnSYpKo=/0x56:612x362/780x390/data/photo/2023/02/20/63f343d9a08c8.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">7 Ras Kucing Termahal di Dunia, Ada yang Mencapai Rp 1,8 Miliar</h5>
+                  <p class="card-text">Dilansir dari PetMD, kucing menjadi peliharaan yang cocok bagi Anda yang memiliki sedikit waktu luang karena sibuk bekerja. Hewan ini tidak membutuhkan banyak perhatian seperti anjing, dan mereka bisa dihibur hanya dengan memberikan mainan, kotak, atau sejenisnya.</p>
+                  <a target="_blank" href="https://www.kompas.com/tren/read/2023/05/11/141500965/7-ras-kucing-termahal-di-dunia-ada-yang-mencapai-rp-1-8-miliar?page=all" class="btn btn-outline-warning">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3">
+              <div class="card">
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:eco,dpr_2.0/rockcms/2022-10/Fenrir-sleeping-jr-inline-221010-db62a5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">Fenrir, kucing tertinggi di dunia, mendukung penampungan hewan dan pasien HIV.</h5>
+                  <p class="card-text">Kucing F2 Savannah memiliki tinggi 18,83 inci dan merupakan “kucing domestik tertinggi di dunia,” menurut Guinness World Records.</p>
+                  <a target="_blank" href="https://www.today.com/pets/guinness-world-records-fenrir-worlds-tallest-living-cat-rcna51490" class="btn btn-outline-warning">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3">
+              <div class="card">
+                <img src="https://cdn0-production-images-kly.akamaized.net/asYsugU-vhMnCQnfdp8yRYKTMeM=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3259990/original/052993100_1602042643-cat_maine-coon__vetschoice.guildinsurance.com.au_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">7 Ras Kucing Terbesar di Dunia, Ada yang Bobotnya hingga 15 Kg.</h5>
+                  <p class="card-text">Kucing menjadi hewan peliharaan yang memiliki berbagai macam jenis dan ras. Pembagian ras pada kucing ditentukan dari ciri fisik, asal negara, dan bahkan pada bobot tubuhnya.
+
+                    Kucing yang termasuk dalam ras berukuran besar umumnya memiliki ketahanan fisik yang kuat, cenderung lebih aktif dan percaya diri.</p>
+                  <a target="_blank" href="https://www.liputan6.com/citizen6/read/5140451/7-ras-kucing-terbesar-di-dunia-ada-yang-bobotnya-hingga-15-kg?page=2" class="btn btn-outline-warning">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 py-3">
+              <div class="card">
+                <img src="https://cdn.idntimes.com/content-images/community/2019/02/q-3-55bb5e130813ba57cb5e70f53bfa7947.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">7 Fakta Unik Rusty-Spotted Cat, Ras Kucing Terkecil di Asia.</h5>
+                  <p class="card-text">Hewan lucu yang satu ini sudah hidup bersama dengan manusia sejak 6000 tahun SM, dan mulai dimanfaatkan sebagai pengusir tikus pada tahun 3500 SM di Mesir Kuno.</p>
+                  <a target="_blank" href="https://www.idntimes.com/hype/fun-fact/dwi-kurniawati-lestari/7-fakta-unik-rusty-spotted-cat-ras-kucing-terkecil-di-asia-c1c2?page=all" class="btn btn-outline-warning">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pelihara Kucing -->
+    <section id="pelihara" class="section text-success p-4">
+      <div class="container">
+        <div
+          class="">
+          <div class="pb-sm-2 text-center text-warning">
+            <h2 style="font-weight: 700;">Memelihara Kucing</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6 py-3 align-items-center">
+              <div class="card">
+                <img src="https://img-cdn.medkomtek.com/x4emtYnSR0zQJzDDo3xZuOAA118=/610x342/smart/filters:quality(100):strip_icc():format(webp)/article/ZJSY1mVpRkT78Oc_xP8mZ/original/1672485838-Rutin%20Membersihkan%20Tempat%20Tidur%20Kucing.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">Agar Tumbuh Sehat, Ini Cara Merawat Kucing dengan Baik!</h5>
+                  <p class="card-text">Bukan hanya tempat tinggal dan makanan saja, kucing juga memerlukan perawatan agar tetap sehat. Bagaimana cara merawat kucing dengan baik?</p>
+                  <a target="_blank" href="https://www.klikdokter.com/info-sehat/kesehatan-hewan/cara-merawat-kucing" class="btn btn-warning text-white">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 py-3">
+              <div class="card">
+                <img src="img/7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">Sudah tahu belum kalau 13 makanan ini bisa dimakan kucing?</h5>
+                  <p class="card-text">Kucing merupakan salah satu hewan peliharaan yang memiliki selera makan yang khas.</p>
+                  <a target="_blank" href="https://www.merdeka.com/gaya/sudah-tahu-belum-kalau-13-makanan-ini-bisa-dimakan-kucing-14525-mvk.html" class="btn btn-warning text-white">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 py-3">
+              <div class="card">
+                <img src="https://images.tokopedia.net/img/KRMmCm/2022/10/3/0a703908-0216-4b05-a79e-70f3911c0d3d.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">15 Makanan yang Tidak Boleh Dimakan Kucing, Bahaya!</h5>
+                  <p class="card-text">Kamu perlu hati-hati saat memberikan makanan hewan dan minuman pada kucingmu karena beberapa makanan yang enak dan bergizi bagi manusia ternyata berbahaya bagi kucing.</p>
+                  <a target="_blank" href="https://www.tokopedia.com/blog/makanan-berbahaya-untuk-kucing-hbl/?utm_source=google&utm_medium=organic#:~:text=Selain%20karena%20mengandung%20kafein%2C%20cokelat,memberikan%20cokelat%20pada%20kucingmu%2C%20ya!" class="btn btn-warning text-white">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 py-3">
+              <div class="card">
+                <img src="https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/09/07174220/ezgif.com-gif-maker-2021-07-07T132731.026-1280x720-1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 style="font-weight: 700;" class="card-title">20+ Ciri-ciri Kucing Sakit dan Cara Mangatasinya</h5>
+                  <p class="card-text">Ciri-ciri kucing sakit dapat kita kenali dari berbagai macam faktor, mulai dari perubahan penampilan, perilaku, aktivitas sampai kemampuannya dalam bersosialisasi.</p>
+                  <a target="_blank" href="https://www.gramedia.com/literasi/ciri-kucing-sakit/" class="btn btn-warning text-white">Baca Lebih!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer
+      class="p-5 bg-warning-subtle text-warning-emphasis text-center position-relative"
+    >
+      <div class="container">
+        <p class="lead">CopyRight 2023 By Ahmad Fatih Ramadhani</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1 text-warning"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
