@@ -1,0 +1,44 @@
+*{
+  font-family: 'Quicksand', sans-serif;
+}
+
+#animated h5:hover {
+    color: green;
+    transition: 0.4s;
+  }
+
+#carousel{
+  background-image: url("img/bg web/carousel.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#hutan{
+  background-image: url("img/bg web/hutan.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#gurun{
+  background-image: url("img/bg web/gurun.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#salju{
+  background-image: url("img/bg web/salju.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#fakta{
+  background-image: url("img/bg web/faktakucing.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#pelihara{
+  background-image: url("img/bg web/rumah.jpg");
+  background-size: cover;
+  background-position: center;
+}

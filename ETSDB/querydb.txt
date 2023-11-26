@@ -1,0 +1,91 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               10.4.28-MariaDB - mariadb.org binary distribution
+-- Server OS:                    Win64
+-- HeidiSQL Version:             12.5.0.6677
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- Dumping database structure for artikelpweb
+CREATE DATABASE IF NOT EXISTS `artikelpweb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `artikelpweb`;
+
+-- Dumping structure for table artikelpweb.artikel
+CREATE TABLE IF NOT EXISTS `artikel` (
+  `id` tinyint(4) NOT NULL,
+  `judul` tinytext NOT NULL,
+  `subjudul` text NOT NULL,
+  `link` text NOT NULL,
+  `gambar` text NOT NULL,
+  `artikel_k_id` tinyint(4) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `artikel_k_FK` (`artikel_k_id`),
+  CONSTRAINT `artikel_k_FK` FOREIGN KEY (`artikel_k_id`) REFERENCES `kategori` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table artikelpweb.artikel: ~15 rows (approximately)
+DELETE FROM `artikel`;
+INSERT INTO `artikel` (`id`, `judul`, `subjudul`, `link`, `gambar`, `artikel_k_id`) VALUES
+	(1, 'European wildcat', 'Kucing liar Eropa (Felis silvestris) adalah spesies kucing liar kecil yang berasal dari benua Eropa, Skotlandia, Turki, dan Kaukasus. Ia mendiami hutan dari Semenanjung Iberia, Italia, Eropa Tengah dan Timur hingga Kaukasus. Bulunya berwarna kecoklatan sampai abu-abu dengan garis-garis di dahi dan samping serta memiliki ekor lebat dengan ujung berwarna hitam.', 'https://en.wikipedia.org/wiki/European_wildcat', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Felis_silvestris_silvestris_Luc_Viatour.jpg/1024px-Felis_silvestris_silvestris_Luc_Viatour.jpg', 1),
+	(2, 'Rusty-spotted cat', 'Kucing bintik karat (Prionailurus rubiginosus) adalah salah satu anggota terkecil keluarga kucing, yang catatan sejarahnya hanya diketahui dari India dan Sri Lanka.', 'https://en.wikipedia.org/wiki/Rusty-spotted_cat', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rusty_spotted_cat_1.jpg/1920px-Rusty_spotted_cat_1.jpg', 1),
+	(3, 'Sand Cat', 'Kucing liar Eropa (Felis silvestris) adalah spesies kucing liar kecil yang berasal dari benua Eropa, Skotlandia, Turki, dan Kaukasus. Ia mendiami hutan dari Semenanjung Iberia, Italia, Eropa Tengah dan Timur hingga Kaukasus. Bulunya berwarna kecoklatan sampai abu-abu dengan garis-garis di dahi dan samping serta memiliki ekor lebat dengan ujung berwarna hitam.', 'https://en.wikipedia.org/wiki/Sand_cat', 'https://cdn0-production-images-kly.akamaized.net/qW8rjdkaAug2__J-Y8-yVh2q1XM=/0x0/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1736865/original/051362600_1507765750-first-wild-sand-cat-kitten-footage-gregory-breton-africa-2-59dc6c8208a09__880.jpg', 2),
+	(4, 'Bisakah Kucing Pasir Menjadi Hewan Peliharaan? Yang Perlu Diketahui Tentang Kucing Menggemaskan Ini', 'Kucing pasir, yang berasal dari gurun di sebagian Afrika dan Asia, adalah hewan cantik yang terbiasa hidup di alam liar. Ukurannya yang mirip dengan kucing rumahan mungkin membuat para pecinta kucing ingin membawanya pulang sebagai hewan peliharaan. Tapi bisakah kucing pasir menjadi hewan peliharaan? Berikut penjelasan lebih lanjut tentang makhluk-makhluk ini dan semua detail tentang apakah Anda dapat menjinakkannya.', 'https://www.greenmatters.com/pets/can-sand-cats-be-pets', 'https://media.greenmatters.com/brand-img/IR0k6kDwV/1600x838/can-sand-cats-be-pets-1-1686074776394.jpg', 2),
+	(5, 'Norwegian Forest Cat', 'Kucing Hutan Norwegia (bahasa Norwegia: Norsk skogskatt dan Norsk skaukatt) adalah jenis kucing domestik yang berasal dari Eropa Utara. Trah alami ini beradaptasi dengan iklim yang sangat dingin, dengan lapisan atas berupa rambut panjang berkilau dan lapisan bawah berbulu untuk insulasi.', 'https://en.wikipedia.org/wiki/Norwegian_Forest_cat', 'https://upload.wikimedia.org/wikipedia/commons/f/fb/Dalaja-Doll-norv%C3%A9gien-ambre-blotched-tabby_avec-blanc.jpg', 3),
+	(6, 'Pallas\'s cat', 'Kucing Pallas (Otocolobus manul), juga dikenal sebagai manul, adalah kucing liar kecil dengan bulu panjang dan lebat berwarna abu-abu muda, dan telinga bulat terletak rendah di sisi kepala.', 'https://en.wikipedia.org/wiki/Pallas%27s_cat', 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Manoel.jpg/1280px-Manoel.jpg', 3),
+	(7, '8 Alasan Memelihara Kucing Baik untuk Kesehatanmu', 'Kucing sesungguhnya amat peka terhadap keadaan sekitar. Ini terutama benar jika menyangkut pemiliknya dan keadaan emosi pemiliknya.', 'https://www.liputan6.com/citizen6/read/4503092/8-alasan-memelihara-kucing-baik-untuk-kesehatanmu?page=2', 'https://cdn1-production-images-kly.akamaized.net/y5E-nFn2wlk7MwRobhbBGUHlS28=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3315302/original/005575500_1607063948-pexels-kelvin-valerio-617278.jpg', 4),
+	(8, '7 Ras Kucing Termahal di Dunia, Ada yang Mencapai Rp 1,8 Miliar', 'Dilansir dari PetMD, kucing menjadi peliharaan yang cocok bagi Anda yang memiliki sedikit waktu luang karena sibuk bekerja. Hewan ini tidak membutuhkan banyak perhatian seperti anjing, dan mereka bisa dihibur hanya dengan memberikan mainan, kotak, atau sejenisnya.', 'https://www.kompas.com/tren/read/2023/05/11/141500965/7-ras-kucing-termahal-di-dunia-ada-yang-mencapai-rp-1-8-miliar?page=all', 'https://asset.kompas.com/crops/PzWFTRnMylHus_Se2HHJPnSYpKo=/0x56:612x362/780x390/data/photo/2023/02/20/63f343d9a08c8.jpeg', 4),
+	(9, 'Fenrir, kucing tertinggi di dunia, mendukung penampungan hewan dan pasien HIV.', 'Kucing F2 Savannah memiliki tinggi 18,83 inci dan merupakan “kucing domestik tertinggi di dunia,” menurut Guinness World Records.', 'https://www.today.com/pets/guinness-world-records-fenrir-worlds-tallest-living-cat-rcna51490', 'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:eco,dpr_2.0/rockcms/2022-10/Fenrir-sleeping-jr-inline-221010-db62a5.jpg', 4),
+	(10, '7 Ras Kucing Terbesar di Dunia, Ada yang Bobotnya hingga 15 Kg.', 'Kucing menjadi hewan peliharaan yang memiliki berbagai macam jenis dan ras. Pembagian ras pada kucing ditentukan dari ciri fisik, asal negara, dan bahkan pada bobot tubuhnya.', 'https://www.liputan6.com/citizen6/read/5140451/7-ras-kucing-terbesar-di-dunia-ada-yang-bobotnya-hingga-15-kg?page=2', 'https://cdn0-production-images-kly.akamaized.net/asYsugU-vhMnCQnfdp8yRYKTMeM=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3259990/original/052993100_1602042643-cat_maine-coon__vetschoice.guildinsurance.com.au_.jpg', 4),
+	(11, '7 Fakta Unik Rusty-Spotted Cat, Ras Kucing Terkecil di Asia.', 'Hewan lucu yang satu ini sudah hidup bersama dengan manusia sejak 6000 tahun SM, dan mulai dimanfaatkan sebagai pengusir tikus pada tahun 3500 SM di Mesir Kuno.', 'https://www.idntimes.com/hype/fun-fact/dwi-kurniawati-lestari/7-fakta-unik-rusty-spotted-cat-ras-kucing-terkecil-di-asia-c1c2?page=all', 'https://cdn.idntimes.com/content-images/community/2019/02/q-3-55bb5e130813ba57cb5e70f53bfa7947.jpg', 4),
+	(12, 'Agar Tumbuh Sehat, Ini Cara Merawat Kucing dengan Baik!', 'Bukan hanya tempat tinggal dan makanan saja, kucing juga memerlukan perawatan agar tetap sehat. Bagaimana cara merawat kucing dengan baik?', 'https://www.klikdokter.com/info-sehat/kesehatan-hewan/cara-merawat-kucing', 'https://img-cdn.medkomtek.com/x4emtYnSR0zQJzDDo3xZuOAA118=/610x342/smart/filters:quality(100):strip_icc():format(webp)/article/ZJSY1mVpRkT78Oc_xP8mZ/original/1672485838-Rutin%20Membersihkan%20Tempat%20Tidur%20Kucing.jpg', 5),
+	(13, 'Sudah tahu belum kalau 13 makanan ini bisa dimakan kucing?', 'Kucing merupakan salah satu hewan peliharaan yang memiliki selera makan yang khas.', 'https://www.merdeka.com/gaya/sudah-tahu-belum-kalau-13-makanan-ini-bisa-dimakan-kucing-14525-mvk.html', 'img/7.jpg', 5),
+	(14, '15 Makanan yang Tidak Boleh Dimakan Kucing, Bahaya!', 'Kamu perlu hati-hati saat memberikan makanan hewan dan minuman pada kucingmu karena beberapa makanan yang enak dan bergizi bagi manusia ternyata berbahaya bagi kucing.', 'https://www.tokopedia.com/blog/makanan-berbahaya-untuk-kucing-hbl/?utm_source=google&utm_medium=organic#:~:text=Selain%20karena%20mengandung%20kafein%2C%20cokelat,memberikan%20cokelat%20pada%20kucingmu%2C%20ya!', 'https://images.tokopedia.net/img/KRMmCm/2022/10/3/0a703908-0216-4b05-a79e-70f3911c0d3d.jpg', 5),
+	(15, '20+ Ciri-ciri Kucing Sakit dan Cara Mangatasinya', 'Ciri-ciri kucing sakit dapat kita kenali dari berbagai macam faktor, mulai dari perubahan penampilan, perilaku, aktivitas sampai kemampuannya dalam bersosialisasi.', 'https://www.gramedia.com/literasi/ciri-kucing-sakit/', 'https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/09/07174220/ezgif.com-gif-maker-2021-07-07T132731.026-1280x720-1.webp', 5);
+
+-- Dumping structure for table artikelpweb.kategori
+CREATE TABLE IF NOT EXISTS `kategori` (
+  `id` tinyint(4) NOT NULL,
+  `nama` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table artikelpweb.kategori: ~5 rows (approximately)
+DELETE FROM `kategori`;
+INSERT INTO `kategori` (`id`, `nama`) VALUES
+	(1, 'kucing hutan'),
+	(2, 'kucing gurun'),
+	(3, 'kucing gunung bersalju'),
+	(4, 'fakta kucing'),
+	(5, 'memelihara kucing');
+
+-- Dumping structure for table artikelpweb.video
+CREATE TABLE IF NOT EXISTS `video` (
+  `id` tinyint(4) NOT NULL,
+  `link` tinytext NOT NULL,
+  `link_k_id` tinyint(4) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `link_k_FK` (`link_k_id`),
+  CONSTRAINT `link_k_FK` FOREIGN KEY (`link_k_id`) REFERENCES `kategori` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table artikelpweb.video: ~3 rows (approximately)
+DELETE FROM `video`;
+INSERT INTO `video` (`id`, `link`, `link_k_id`) VALUES
+	(1, 'https://www.youtube.com/embed/W86cTIoMv2U?si=-jkMbMTH3htSEAWV', 1),
+	(2, 'https://www.youtube.com/embed/tGdL-34L-GE?si=urngOQDnXcWlEEB1', 2),
+	(3, 'https://www.youtube.com/embed/kgrV3_g9rYY?si=9vHPo_2ge55rNd9K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share', 3);
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
